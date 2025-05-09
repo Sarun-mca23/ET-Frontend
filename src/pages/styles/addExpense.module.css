@@ -1,0 +1,117 @@
+
+
+/* Main container for the add expense section */
+/* Container for the page */
+.Deposite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 91vh;
+  background: linear-gradient(80deg, #e8eaec, #7d9ad4, #4da1eb);
+}
+
+/* Main container for the add expense section */
+.DepositeContainer {
+  background: linear-gradient(80deg, #e8eaec,  #8fb1ce);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Input fields wrapper */
+.inputWrapper {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increase the gap between inputs */
+}
+
+/* Label and input field container */
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* General input field styling */
+input, select {
+  padding: 12px; /* Increased padding for better readability */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  width: 100%; /* Full-width input fields */
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/* Buttons styling */
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Full-width buttons */
+}
+
+.depositBtn {
+  background-color: #4a90e2;
+  color: white;
+  font-weight: bold;
+  padding: 0.8rem 2rem;
+  width: 200px; /* Set a specific width for the button */
+  max-width: 100%; /* Ensure it doesn't exceed the parent container's width */
+  display: block; /* Make the button a block element */
+  margin: 0 auto; /* Center the button horizontally */
+}
+
+
+
+.depositBtn:hover {
+  background-color: #45a049;
+}
+
+.withdrawBtn {
+  background-color: #f44336;
+  color: white;
+  font-weight: bold;
+}
+
+.withdrawBtn:hover {
+  background-color: #e53935;
+}
+
+/* Current balance display */
+p spam {
+  font-size: 18px;
+  font-weight: bold;
+  color: #035806; /* Green color */
+  margin-bottom: 20px;
+}
+.Title {
+  font-weight: 900; /* Max boldness */
+}
+
+/* Other styles for modal, toast, etc. remain the same */

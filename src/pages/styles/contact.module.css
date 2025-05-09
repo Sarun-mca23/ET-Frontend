@@ -1,0 +1,106 @@
+.container {
+    padding: 4rem;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subText {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .socialLinks a {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    color: #135f07;
+  }
+  
+  .socialLinks a:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+    color: #01092b;
+  }
+  
+  .emailSection {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .emailLink {
+    color: #5675f1;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .formSection {
+    margin-top: 3rem;
+    text-align: center; /* Center form heading */
+  }
+  
+  .formHeading {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  /* Form wrapper to center everything */
+  .formWrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .inputField,
+  .textareaField {
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn't overflow width */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .submitButton {
+    width: 100%;
+    padding: 1rem;
+    background-color: #5675f1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #051456;
+  }
+  /* Toastify Styles (Override Default Styles) */
+.Toastify__toast {
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+  
+  .Toastify__toast--success {
+    background-color: #4CAF50;  /* Green success color */
+  }
+  
+  .Toastify__toast--error {
+    background-color: #F44336;  /* Red error color */
+  }
+  

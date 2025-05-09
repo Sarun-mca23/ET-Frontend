@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #5879f3;
+  padding: 0.6rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;  /* Distribute space between logo and nav links */
+  align-items: center;
+  width: 94%;  /* Ensure it spans full width */
+  padding-left: 20px; /* Optional: Adjust space from left edge of screen */
+  padding-right: 20px; /* Optional: Adjust space from right edge of screen */
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  background: linear-gradient(90deg, #e0e0f6, #060c78, #afafb4);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: moveGradient 5s linear infinite; /* Infinite animation for gradient movement */
+}
+
+/* On hover: expand letter spacing + animate gradient + shadow */
+.logo a:hover {
+  letter-spacing: 6px;
+  text-shadow: 0 0 8px rgba(70, 94, 247, 0.8), 0 0 15px rgb(255, 255, 255);
+}
+
+/* Animation for moving gradient */
+@keyframes moveGradient {
+  0% {
+    background-position: 200% 0%; /* Start with the gradient moving from right to left */
+  }
+  50% {
+    background-position: 0% 0%; /* Gradient is in its default position */
+  }
+  100% {
+    background-position: -200% 0%; /* Move the gradient from left to right */
+  }
+}
+
+/* Navigation Links */
+.navLinks {
+  list-style: none;
+  display: flex;
+  margin-left: 0;  /* Reset any unwanted margin */
+  padding-left: 0;  /* Reset any padding */
+}
+
+.navLinks li {
+  margin-right: 1rem;  /* Space between the items */
+}
+
+/* Nav link base style */
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative; /* Needed for pseudo-element */
+  transition: color 0.3s ease;
+}
+
+/* Underline pseudo-element */
+.navLinks a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 50%;
+  background-color: #ffffff; /* Underline color */
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+/* Hover effect */
+.navLinks a:hover {
+  color: #160898; /* Text color on hover */
+}
+
+.navLinks a:hover::after {
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  /* Position the hamburger icon on the right */
+  position: absolute;
+  right: 50px; /* 20px from the right edge */
+  top: 50%; /* Vertically centered */
+  transform: translateY(-50%); /* Adjust to center properly */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navbar{
+    padding: 20px;
+  }
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    width: 100%;  /* Make navLinks span the full width on mobile */
+    position: absolute;
+    top: 60px; /* Adjust this to align below the navbar */
+    left: 0;
+    background-color: #5675f1;
+    text-align: center;
+    padding-left: 20px;  /* Padding for mobile */
+    z-index: 1000;  /* Ensure the menu stays on top */
+  }
+
+  .navLinks.active {
+    display: flex;
+  }
+
+  .navLinks li {
+    margin: 1rem 0;
+  }
+
+  .hamburger {
+    display: block;  /* Show hamburger menu on mobile */
+  }
+}

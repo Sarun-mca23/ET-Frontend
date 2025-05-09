@@ -1,0 +1,115 @@
+/* signup.module.css */
+
+.signupContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 105vh;
+    background: linear-gradient(80deg, #e8eaec, #7d9ad4, #4da1eb);
+    padding: 7rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .formWrapper {
+    background-color: white;
+    padding: 0.3rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .inputGroup {
+    margin-bottom: 1.25rem;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+  
+  .input:focus {
+    border-color: #2563eb;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+  }
+  
+  .submitButton {
+    width: 100%;
+    padding: 1rem;
+    background-color: #2563eb;
+    color: white;
+    font-weight: 600;
+    font-size: 1.125rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .error {
+    color: red;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+ 
+.linkText {
+    margin-top: 20px;       
+    text-align: center;      
+    font-size: 14px; 
+    font-family: sans-serif;        
+    color: #333;            
+  }
+  
+  /* Styling for the link */
+  .link {
+    color: #007bff;          /* Sets the link color to blue */
+    text-decoration: none;   /* Removes underline */
+    font-weight: bold;       /* Makes the link text bold */
+    transition: color 0.3s;  /* Smooth transition for color change */
+  }
+  
+  /* Link hover effect */
+  .link:hover {
+    color: #062c53; 
+    text-decoration: underline;         /* Changes link color on hover */
+   /* Adds underline on hover */
+  }
+
+  @media (max-width: 600px) {
+    .signupContainer {
+      padding: 6rem 1rem;
+      height: auto;
+    }
+  
+    .formWrapper {
+      max-width: 100%;
+      padding: 2rem;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+  

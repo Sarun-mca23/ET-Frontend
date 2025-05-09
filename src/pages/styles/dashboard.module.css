@@ -1,0 +1,120 @@
+/* Apply gradient to the entire page */
+body {
+  background: linear-gradient(80deg, #e8eaec, #7d9ad4, #4da1eb);
+}
+
+/* Container styling */
+.profileContainer {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 4.3rem auto;
+  color: #333;
+  background: linear-gradient(135deg, #e8eaec 0%, #4da1eb 60%, #1a73e8 100%);
+  border-radius: 8px;
+}
+
+/* Top bar navigation */
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d3a4f;
+  padding: 15px 30px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.welcomeText {
+  color: #f1faee;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Links group */
+.topLinks {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.topLink {
+  color: #f0eefa;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  background-color: #3c4a63; /* subtle background to make links pop */
+}
+
+.topLink:hover {
+  background-color: #457b9d;
+  cursor: pointer;
+}
+
+/* Dashboard content */
+.dashContainer {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.dashInfo p {
+  font-size: 16px;
+  margin: 12px 0;
+  color: #555;
+}
+
+.dashInfo strong {
+  color: #2d3a4f;
+  font-weight: 600;
+}
+
+/* Logout button */
+.btnDash {
+  margin-top: 25px;
+  padding: 12px 30px;
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btnDash:hover {
+  background-color: #d62839;
+}
+
+/* -------- MOBILE RESPONSIVENESS -------- */
+@media (max-width: 768px) {
+  .topBar {
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center;  /* Ensure text centers too */
+    padding: 20px;
+  }
+
+  .welcomeText {
+    margin-bottom: 15px;
+    order: -1; /* Moves the welcome text to the top */
+  }
+
+  .topLinks {
+    width: 100%;
+    justify-content: center; /* Center the links group */
+    gap: 10px;
+  }
+
+  .topLink {
+    flex: 1 1 40%; /* Each link takes ~40% width */
+    text-align: center;
+    padding: 10px 0;
+  }
+}

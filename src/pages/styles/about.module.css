@@ -1,0 +1,125 @@
+/* General Page Styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2.9rem 0;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+  }
+  
+  /* Introduction Section */
+  .introduction {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .introduction h1 {
+    font-size: 2.5rem;
+    color: #0b022c;
+    margin-bottom: 1rem;
+  }
+  
+  .introduction p {
+    font-size: 1.2rem;
+    color: #060672;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Project Details */
+  .projectDetails {
+    margin-bottom: 3rem;
+  }
+  
+  .projectDetails h2 {
+    font-size: 2.2rem;
+    color: #0b022c;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .details {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .textSection, .techSection {
+    width: 45%;
+  }
+  
+  .textSection h3, .techSection h3 {
+    font-size: 1.5rem;
+    color: #0b022c;
+  }
+  
+  .textSection p {
+    font-size: 1.1rem;
+    color: #060672;
+    line-height: 1.6;
+  }
+  
+  .techSection ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .techSection li {
+    font-size: 1.1rem;
+    color: #060672;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* About Me Section */
+  .aboutMe {
+    margin-bottom: 3rem;
+  }
+  
+  .aboutMe h2 {
+    font-size: 2.2rem;
+    color: #0b022c;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .meDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .text {
+    max-width: 600px;
+  }
+  
+  .text p {
+    font-size: 1.1rem;
+    color: #060672;
+    line-height: 1.6;
+  }
+  
+  /* Contact Section */
+  .contact {
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 2.2rem;
+    color: #0b022c;
+    margin-bottom: 1rem;
+  }
+  
+  .contact p {
+    font-size: 1.1rem;
+    color: #0b022c;
+    line-height: 1.6;
+  }
+  

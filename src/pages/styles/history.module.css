@@ -1,0 +1,113 @@
+/* --- Heading --- */
+.tableContainer h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+  padding: 2rem;
+  color: #333;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* --- Table --- */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 16px;
+  border: 1px solid #545556;
+}
+
+.table td {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.table th {
+  background-color: #5d7de4;
+  color: white;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tr:hover {
+  background-color: #b9c2eb;
+}
+
+/* --- Filters Wrapper (centered) --- */
+.controlsWrapper {
+  display: flex;
+  justify-content: center; /* center filters horizontally */
+  flex-wrap: wrap; /* allow wrapping on small screens */
+  gap: 1rem; /* spacing between filter items */
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* labels stay above inputs */
+  min-width: 150px;
+  max-width: 250px; /* prevent it from growing too large */
+}
+
+.filterGroup label {
+  font-weight: 600;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+.filterGroup input,
+.filterGroup select {
+  padding: 0.5rem 1rem; /* adjusted padding */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.06);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  width: 100%; /* adjust to full width of container */
+  font-size: 14px;
+}
+
+.filterGroup input:focus,
+.filterGroup select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+.clearBtn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  height: fit-content; /* match height of inputs */
+  align-self: flex-end; /* align button to bottom of other filters */
+  margin-top: 1rem; /* add space above button */
+}
+
+.clearBtn:hover {
+  background-color: #d32f2f;
+}
+
+/* --- Container Padding (to avoid touching edges) --- */
+.container {
+  padding: 1rem;
+}
+
+.tableContainer {
+  padding: 1rem;
+  max-width: 1000px;
+  margin: 0 auto; /* Center the table container */
+}

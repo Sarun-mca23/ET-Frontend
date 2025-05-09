@@ -1,0 +1,123 @@
+/* login.module.css */
+
+/* Root container */
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: linear-gradient(80deg, #e8eaec, #7d9ad4, #4da1eb);;
+}
+
+/* Form wrapper */
+.formWrapper {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Page title */
+.title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Input group styling */
+.inputGroup {
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+/* Label styling */
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Input field styling */
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit button styling */
+.submitButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+/* Text for link (signup) */
+.linkText {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Link styling */
+.link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #d650ff;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 480px) {
+  .formWrapper {
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .input {
+    padding: 0.65rem;
+    font-size: 0.95rem;
+  }
+
+  .submitButton {
+    padding: 0.65rem;
+    font-size: 0.95rem;
+  }
+}
